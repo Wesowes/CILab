@@ -24,19 +24,27 @@ public class CILabTest {
         myString.setString("THIS");
         boolean check = myString.detectCapitalUse();
         assertEquals(true, check);
-
     }
+    // test for all capital letters, expected output is true
     @Test
     public void detectCapitalUseTest2() {
         myString.setString("this");
         boolean check = myString.detectCapitalUse();
         assertEquals(false, check);
     }
+    // test for all lowercase letters, expected output is false
     @Test
     public void detectCapitalUseTest3() {
         myString.setString("This");
         boolean check = myString.detectCapitalUse();
         assertEquals(true, check);
     }
+    @Test
+    public void detectCapitalUseTest4() {
+        myString.setString("ThIs");
+        boolean check = myString.detectCapitalUse();
+        assertEquals(false, check);
+    }
+    // test for proper capitalization, expected output is true
 
 }
