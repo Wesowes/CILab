@@ -28,7 +28,9 @@ public class CILabTest {
     }
     @Test
     public void detectCapitalUseTest2() {
-        fail("Not yet implemented");
+        myString.setString("this");
+        boolean check = myString.detectCapitalUse();
+        assertEquals(false, check);
     }
 
 
