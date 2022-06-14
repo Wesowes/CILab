@@ -24,7 +24,7 @@ public class CILab implements CILabInterface {
             if (Character.isUpperCase(firstLetter)) {
                 for (int i = 1; i < myString.length(); i++) {
                     char letter = myString.charAt(i);
-                    if (Character.isLowerCase(i)) {
+                    if (Character.isLowerCase(letter)) {
                         check = true;
                     } else {
                         check = false;
