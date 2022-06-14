@@ -32,6 +32,11 @@ public class CILabTest {
         boolean check = myString.detectCapitalUse();
         assertEquals(false, check);
     }
-
+    @Test
+    public void detectCapitalUseTest3() {
+        myString.setString("This");
+        boolean check = myString.detectCapitalUse();
+        assertEquals(true, check);
+    }
 
 }
